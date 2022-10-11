@@ -1,0 +1,57 @@
+body {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+.navigation {
+  padding-top: 10px;
+  text-align: center;
+  background-color: pink;
+  display: block;
+}
+.navigation a {
+  font-family: monospace;
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.navigation .icon {
+  background: pink;
+  display: block;
+}
+
+#navigationlinks {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {
+    display: none;
+  }
+  .navigation a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation .responsive {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation .responsive a.icon {
+    position: absolute;
+  }
+  .navigation .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
